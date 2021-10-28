@@ -1,2 +1,2 @@
 # Digipalveluprojekti
-Ruokalaskuriprojekti
+Kalorilaskuriprojekti
