@@ -3,7 +3,7 @@ from django.contrib import admin
 from .models import tehtava
 
 class TehtavaAdmin(admin.ModelAdmin):
-    fields = ["ruoka"]
+    fields = ["ruoka", "kalori_per_100g"]
 
 
 
