@@ -4,4 +4,6 @@ from django.template import loader
 from django.shortcuts import render
 
 def index(request):
-    return render(request, 'kalorilaskuri/index.html')
+    ruoat = tehtava.objects.all()
+    context = {'ruoat': ruoat,}
+    return render(request, 'kalorilaskuri/index.html', context)

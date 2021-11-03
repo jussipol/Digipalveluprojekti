@@ -9,7 +9,24 @@
 </head>
 <h1> Kalorilaskuri </h1> 
 <body>
-	
+
+<select id="ruoka_id">
+{% for ruoka in ruoat %}
+    <option value="{{ ruoka.kalori }}"> {{ruoka}} </option>
+{% endfor %}
+</select>
+<button onclick="myFunction()">👀</button>
+<script>
+let count = 0;
+function myFunction() {
+    let selected = document.querySelector('SELECT').value;
+    count += selected;
+    let optionElem = document.createElement('span');
+    optionElem.textContent = count;
+}
+</script>
+
+
 </body>
 
 
