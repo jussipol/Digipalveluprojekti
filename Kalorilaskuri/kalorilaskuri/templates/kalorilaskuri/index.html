@@ -15,10 +15,13 @@
         <option value={{ ruoka.kalori_per_100g }}> {{ruoka}} </option>
     {% endfor %}
     </select>
-    <button onclick="myFunction()">👀</button>
+    <button onclick="myFunction()">🍴🍕</button>
+    
+    <div>Aseta päivän kaloritavoite: <input id="kaloritavoite" type="text" ></div>
+
     <ul id="select-container"></ul>
     <div>Kalorit yhteensä: <span id="kalorit">0</span></div>
-    
+
 <script>
 
 let count = 0;
@@ -35,8 +38,11 @@ function myFunction() {
     let selectContainer = document.querySelector('#select-container');
     selectContainer.appendChild(optionElem);
 
+    let kaloritavoite = document.querySelector('#kaloritavoite').value;
+
+
     let kalorit_yhteensa = document.querySelector('#kalorit');
-    kalorit_yhteensa.textContent = count;
+    kalorit_yhteensa.textContent = count + ' / ' + kaloritavoite;
 }
 </script>
 
