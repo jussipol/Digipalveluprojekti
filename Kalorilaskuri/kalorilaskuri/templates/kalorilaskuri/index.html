@@ -16,13 +16,18 @@
 {% endfor %}
 </select>
 <button onclick="myFunction()">👀</button>
+<ul id="select-container"></ul>
 <script>
 let count = 0;
 function myFunction() {
-    let selected = document.querySelector('SELECT').value;
-    count += selected;
-    let optionElem = document.createElement('span');
-    optionElem.textContent = count;
+    let selected = document.querySelector('#ruoka_id');
+    let ruoka_listaan = selected.options[selected.selectedIndex].textContent
+    count += selected.value;
+    console.log(count)
+    let optionElem = document.createElement('LI');
+    optionElem.textContent = ruoka_listaan;
+    let selectContainer = document.querySelector('#select-container')
+    selectContainer.appendChild(optionElem)
 }
 </script>
 
