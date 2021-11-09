@@ -28,6 +28,7 @@
 <script>
 
 let count = 0;
+let kalorit_yhteensa;
 
 function myFunction() {
     let selected = document.querySelector('#ruoka_id');
@@ -44,13 +45,15 @@ function myFunction() {
     let kaloritavoite = document.querySelector('#kaloritavoite').value;
 
 
-    let kalorit_yhteensa = document.querySelector('#kalorit');
+    kalorit_yhteensa = document.querySelector('#kalorit');
     kalorit_yhteensa.textContent = count + ' / ' + kaloritavoite;
 }
 
 function resetFunction() {
-   //const elmnt = document.getElementById(selectContainer); elmnt.remove();
-   //selectContainer.removeChild(optionElem.textContent);
+   kaloritavoite = document.querySelector('#kaloritavoite').value;
+   const elmnt = document.getElementById("select-container"); elmnt.remove();
+   count = 0;
+   kalorit_yhteensa.textContent = count + ' / ' + kaloritavoite;
 }
 </script>
 
