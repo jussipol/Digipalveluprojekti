@@ -1,7 +1,10 @@
+header {
+    background-image: url('pics/head_ban.png');
+}
 
 body {
     padding: 70px;
-    background-color:tan;
+    background-color: rgb(213, 217, 221);
     text-align: center;
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -9,7 +12,7 @@ body {
 
 div {
     padding: 20px;
-    background-color: wheat;
+    background-color: rgb(161, 161, 161);
     margin-top: 20px;
     margin-bottom: 20px;
     

@@ -7,22 +7,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kalorilaskuri </title>
 </head>
-<h1> Kalorilaskuri </h1> 
+
 <body>
-<header><img src="pics/head_ban.png" alt="logo" class="responsive"></header>
-    <div class="responsive">
+
+<header><img src="{%static 'kalorilaskuri/pics/logo_head.png'%}" alt="logo" class="responsive"></header>
+<div class="responsive">
         
-        <p>Aseta päivän kaloritavoite: <input id="kaloritavoite" type="text" > </p>
-        <p>Valitse ruoka-aineet: <select id="ruoka_id">
-        {% for ruoka in ruoat %}
-            <option value={{ ruoka.kalori_per_100g }}> {{ruoka}} </option>
-        {% endfor %}
-        </select>
-        <button onclick="myFunction()">Lisää 🍴🍕</button></p>
-        <ul id="select-container"></ul>
-        <button onclick="deleteFunction()">Poista valittu </button>
-        <button onclick="resetFunction()">Poista kaikki</button>
-    <div>Kalorit yhteensä: <span id="kalorit">0</span><div>
+    <p>Aseta päivän kaloritavoite: <input id="kaloritavoite" type="text" > </p>
+    <p>Valitse ruoka-aineet: <select id="ruoka_id">
+    {% for ruoka in ruoat %}
+        <option value={{ ruoka.kalori_per_100g }}> {{ruoka}} </option>
+    {% endfor %}
+    </select>
+
+    <button onclick="myFunction()">Lisää 🍴🍕</button></p>
+    <ul id="select-container"></ul>
+    <button onclick="deleteFunction()">Poista valittu </button>
+    <button onclick="resetFunction()">Poista kaikki</button>
+    
+    <div>Kalorit yhteensä: <span id="kalorit">0 / 0</span><div>
+
 </div>
 
 <script>
@@ -37,6 +41,7 @@ function myFunction() {
     count += +selected.value;
     
     let optionElem = document.createElement('LI');
+    optionElem.classList.add('lista_elem')
     optionElem.textContent = ruoka_listaan + ' ' + selected.value;
 
     let selectContainer = document.querySelector('#select-container');
@@ -51,7 +56,12 @@ function myFunction() {
 
 function resetFunction() {
    kaloritavoite = document.querySelector('#kaloritavoite').value;
-   const elmnt = document.getElementById("select-container"); elmnt.remove();
+   let lista_elems = document.querySelectorAll(".lista_elem");
+   
+   for (let elem of lista_elems) {
+       elem.remove();
+   }
+
    count = 0;
    kalorit_yhteensa.textContent = count + ' / ' + kaloritavoite;
 }
