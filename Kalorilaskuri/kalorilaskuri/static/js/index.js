@@ -9,7 +9,6 @@ function myFunction() {
 	count += +selected.value;
 
 	let optionElem = document.createElement('LI');
-    let checkboxElem = document.createElement('INPUT')
     checkboxElem.type = 'checkbox'
     optionElem.classList.add('lista_elem');
 
@@ -19,17 +18,6 @@ function myFunction() {
 	optionElem.appendChild(checkboxElem);
     selectContainer.appendChild(optionElem);
     
-
-	let kaloritavoite = document.querySelector('#kaloritavoite').value;
-
-
-	kalorit_yhteensa = document.querySelector('#kalorit');
-	kalorit_yhteensa.textContent = count + ' / ' + kaloritavoite;
-}
-
-function resetFunction() {
-	kaloritavoite = document.querySelector('#kaloritavoite').value;
-	let lista_elems = document.querySelectorAll(".lista_elem");
 
 	for (let elem of lista_elems) {
 		elem.remove();
