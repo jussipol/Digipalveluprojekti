@@ -9,11 +9,15 @@ function myFunction() {
 	count += +selected.value;
 
 	let optionElem = document.createElement('LI');
-	optionElem.classList.add('lista_elem')
+	let checkboxElem = document.createElement('INPUT')
+	checkboxElem.type = 'checkbox'
+	optionElem.classList.add('lista_elem');
+	
 	optionElem.textContent = ruoka_listaan + ' ' + selected.value;
 
 	let selectContainer = document.querySelector('#select-container');
 	selectContainer.appendChild(optionElem);
+	optionElem.appendChild(checkboxElem);
 
 	let kaloritavoite = document.querySelector('#kaloritavoite').value;
 

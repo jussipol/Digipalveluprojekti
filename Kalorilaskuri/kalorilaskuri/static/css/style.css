@@ -16,6 +16,10 @@ body {
     
 }
 
+#select-container li {
+    list-style: none;
+}
+
 div {
     
     padding: 20px;
