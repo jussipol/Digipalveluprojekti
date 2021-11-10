@@ -9,11 +9,16 @@ function myFunction() {
 	count += +selected.value;
 
 	let optionElem = document.createElement('LI');
-	optionElem.classList.add('lista_elem')
-	optionElem.textContent = ruoka_listaan + ' ' + selected.value;
+    let checkboxElem = document.createElement('INPUT')
+    checkboxElem.type = 'checkbox'
+    optionElem.classList.add('lista_elem');
 
-	let selectContainer = document.querySelector('#select-container');
-	selectContainer.appendChild(optionElem);
+    optionElem.textContent = ruoka_listaan + ' ' + selected.value;
+
+    let selectContainer = document.querySelector('#select-container');
+	optionElem.appendChild(checkboxElem);
+    selectContainer.appendChild(optionElem);
+    
 
 	let kaloritavoite = document.querySelector('#kaloritavoite').value;
 
@@ -32,4 +37,20 @@ function resetFunction() {
 
 	count = 0;
 	kalorit_yhteensa.textContent = count + ' / ' + kaloritavoite;
+}
+
+function deleteFunction() {
+	let lista_elems = document.querySelectorAll(".lista_elem");
+	
+
+	for (let elem of lista_elems) {
+		let listaelem = elem.querySelector('input');
+		if (listaelem.checked){
+			elem.remove();
+		}
+		
+	}
+
+	
+
 }

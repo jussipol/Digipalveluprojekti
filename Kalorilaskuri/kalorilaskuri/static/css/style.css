@@ -1,5 +1,7 @@
 header {
     background-image: url('/static/pics/head_ban.png');
+    display: flex;
+    justify-content: center;
 }
 
 body {
@@ -14,13 +16,17 @@ body {
     
 }
 
-div {
+.main-div {
     
-    padding: 20px;
-    background-color: rgb(161, 161, 161);
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: rgba(161, 161, 161, 0.4);
     margin-top: 20px;
     margin-bottom: 20px;
-    
+    border: 1px ,1.0;
+    background-clip: border-box;
+    width: 100%;
+    height: auto;
   }
 
   p {
@@ -28,7 +34,54 @@ div {
       margin-bottom: 20px;
   }
 
-  .responsive {
-    width: auto;
-    height: auto;
-  }
+  @media only screen and (max-width: 760px) {
+    .header-img {
+        width: 70vw;
+    }
+}
+
+#select-container li {
+    list-style: none;
+    margin-top: 10px;
+}
+
+button {
+    background-color:rgb(108,163,87);
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    border-color: rgba(0, 0, 0, 0.05);
+    height: 40px;
+    border-style: outset;
+    cursor: pointer;
+    color: rgb(220,255,207);
+    font-size: 0.8em;
+    margin-right: 30px;
+}
+
+button:hover {
+    background-color: rgb(79,119,64);
+}
+
+select {
+    font-size: 15px;
+    background-color:rgb(108,163,87);
+    color: white;
+    margin-right: 20px;
+    border-radius: 8px;
+    height: 40px;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+input {
+    font-size: 15px;
+}
+
+option {
+    font-size: 15px;
+}
+
+#kaloritavoite {
+    width: 60px;
+    height: 25px;
+    opacity: 0.7;
+}

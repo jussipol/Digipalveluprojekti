@@ -10,10 +10,10 @@
 
 <body>
 
-<header><img src="{%static 'pics/logo_head.png'%}" alt="logo" class="responsive"></header>
-<div class="responsive">
+<header><img src="{%static 'pics/logo_head.png'%}" alt="logo" class="header-img"></header>
+<div class="main-div">
         
-    <p>Aseta päivän kaloritavoite: <input id="kaloritavoite" type="text" > </p>
+    <p>Aseta päivän kaloritavoite: <input id="kaloritavoite" type="number" > </p>
     <p>Valitse ruoka-aineet: <select id="ruoka_id">
     {% for ruoka in ruoat %}
         <option value={{ ruoka.kalori_per_100g }}> {{ruoka}} </option>
@@ -25,21 +25,12 @@
     <button onclick="deleteFunction()">Poista valittu </button>
     <button onclick="resetFunction()">Poista kaikki</button>
     
-    <div>Kalorit yhteensä: <span id="kalorit">0 / 0</span><div>
+    <p>Kalorit yhteensä: <span id="kalorit">0 / 0</span></p>
     
-
 </div>
 
 <script src="{%static 'js/index.js'%}"></script>
 
-
-
 </body>
-
-
-
-
-
-
 
 </html>
