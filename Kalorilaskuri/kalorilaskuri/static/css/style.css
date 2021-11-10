@@ -1,5 +1,7 @@
 header {
     background-image: url('/static/pics/head_ban.png');
+    display: flex;
+    justify-content: center;
 }
 
 body {
@@ -28,7 +30,8 @@ div {
       margin-bottom: 20px;
   }
 
-  .responsive {
-    width: auto;
-    height: auto;
+  @media only screen and (max-width: 760px) {
+      .header-img {
+          width: 70vw;
+      }
   }
