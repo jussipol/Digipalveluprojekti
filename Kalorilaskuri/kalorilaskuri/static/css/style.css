@@ -13,19 +13,39 @@ body {
     text-align: center;
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
+
 }
 
+
+.main-div {
+
+    padding: 20px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: rgba(161, 161, 161, 0.4);
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    border: 1px ,1.0;
+    background-clip: border-box;
+    width: 100%;
+    height: auto;
+  }
 
   p {
       margin-top: 20px;
       margin-bottom: 20px;
   }
 
+  .responsive {
+    width: auto;
+    height: auto;
+  }
   @media only screen and (max-width: 760px) {
-        
+    .header-img {
+        width: 70vw;
     }
-
+}
 
 #select-container li {
     list-style: none;
