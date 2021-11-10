@@ -3,9 +3,9 @@ header {
 }
 
 body {
-    background-image: url('pics/bck_img.png');
+    background-image: url('/static/pics/bck_img.png');
     background-size: cover;
-  background-repeat: no-repeat;
+    background-repeat: no-repeat;
     padding: 70px;
     background-color: rgb(213, 217, 221);
     text-align: center;
