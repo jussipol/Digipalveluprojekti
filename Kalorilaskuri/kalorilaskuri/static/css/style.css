@@ -8,6 +8,7 @@ body {
     background-image: url('/static/pics/bck_img.png');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position:center center;
     padding: 70px;
     background-color: rgb(213, 217, 221);
     text-align: center;
@@ -25,10 +26,12 @@ body {
     background-color: rgba(161, 161, 161, 0.4);
     margin-top: 20px;
     margin-bottom: 20px;
-
+    border-style:solid;
+    border-color: white;
+    border-width: 1px;
     border: 1px ,1.0;
     background-clip: border-box;
-    width: 100%;
+    width: auto;
     height: auto;
   }
 
@@ -91,4 +94,14 @@ option {
     width: 60px;
     height: 25px;
     opacity: 0.7;
+}
+
+footer {
+    bottom: 0px;
+    background-color: grey;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    
 }
