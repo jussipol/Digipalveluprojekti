@@ -73,7 +73,8 @@ button:hover {
     background-color: rgb(79,119,64);
 }
 
-select {
+#ruoka_id {
+    width: 75%;
     font-size: 15px;
     background-color:rgb(108,163,87);
     color: white;

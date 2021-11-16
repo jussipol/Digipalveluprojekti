@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html>
+
 {% load  static %}
 <head>
-<meta charset='utf-8'>
-<link rel="stylesheet" href="{%static 'css/style.css' %}">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kalorilaskuri </title>
+    <meta charset='utf-8'>
+    <link rel="stylesheet" href="{%static 'css/style.css' %}">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalorilaskuri </title>
 </head>
 
 <body>
@@ -14,7 +19,8 @@
 <div class="main-div">
 
     <p>Aseta päivän kaloritavoite: <input id="kaloritavoite" type="number"> </p>
-    <p>Valitse ruoka-aineet: <select id="ruoka_id">
+    <select id="ruoka_id">
+        <option></option>
     {% for ruoka in ruoat %}
         <option value={{ ruoka.kalori_per_100g }}> {{ruoka}} </option>
     {% endfor %}
@@ -30,6 +36,15 @@
 </div>
 
 <script src="{%static 'js/index.js'%}"></script>
+<script>
+    $(document).ready(function () {
+            $('#ruoka_id').select2({
+                width: '40%',
+                placeholder: 'Valitse lisättävät ruoka-aineet',
+                dropdownAutoWidth: true
+            });
+        });
+</script>
 
 
 </body>
