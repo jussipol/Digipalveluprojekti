@@ -1,0 +1,476 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 10.19
+-- Dumped by pg_dump version 10.19
+
+-- Started on 2021-11-17 16:04:45
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- TOC entry 2929 (class 0 OID 16426)
+-- Dependencies: 203
+-- Data for Name: auth_group; Type: TABLE DATA; Schema: public; Owner: kalorilaskuri_app
+--
+
+
+
+--
+-- TOC entry 2931 (class 0 OID 16436)
+-- Dependencies: 205
+-- Data for Name: auth_group_permissions; Type: TABLE DATA; Schema: public; Owner: kalorilaskuri_app
+--
+
+
+
+--
+-- TOC entry 2927 (class 0 OID 16418)
+-- Dependencies: 201
+-- Data for Name: auth_permission; Type: TABLE DATA; Schema: public; Owner: kalorilaskuri_app
+--
+
+INSERT INTO public.auth_permission (id, name, content_type_id, codename) VALUES (1, 'Can add log entry', 1, 'add_logentry');
+INSERT INTO public.auth_permission (id, name, content_type_id, codename) VALUES (2, 'Can change log entry', 1, 'change_logentry');
+INSERT INTO public.auth_permission (id, name, content_type_id, codename) VALUES (3, 'Can delete log entry', 1, 'delete_logentry');
+INSERT INTO public.auth_permission (id, name, content_type_id, codename) VALUES (4, 'Can view log entry', 1, 'view_logentry');
+INSERT INTO public.auth_permission (id, name, content_type_id, codename) VALUES (5, 'Can add permission', 2, 'add_permission');
+INSERT INTO public.auth_permission (id, name, content_type_id, codename) VALUES (6, 'Can change permission', 2, 'change_permission');
+INSERT INTO public.auth_permission (id, name, content_type_id, codename) VALUES (7, 'Can delete permission', 2, 'delete_permission');
+INSERT INTO public.auth_permission (id, name, content_type_id, codename) VALUES (8, 'Can view permission', 2, 'view_permission');
+INSERT INTO public.auth_permission (id, name, content_type_id, codename) VALUES (9, 'Can add group', 3, 'add_group');
+INSERT INTO public.auth_permission (id, name, content_type_id, codename) VALUES (10, 'Can change group', 3, 'change_group');
+INSERT INTO public.auth_permission (id, name, content_type_id, codename) VALUES (11, 'Can delete group', 3, 'delete_group');
+INSERT INTO public.auth_permission (id, name, content_type_id, codename) VALUES (12, 'Can view group', 3, 'view_group');
+INSERT INTO public.auth_permission (id, name, content_type_id, codename) VALUES (13, 'Can add user', 4, 'add_user');
+INSERT INTO public.auth_permission (id, name, content_type_id, codename) VALUES (14, 'Can change user', 4, 'change_user');
+INSERT INTO public.auth_permission (id, name, content_type_id, codename) VALUES (15, 'Can delete user', 4, 'delete_user');
+INSERT INTO public.auth_permission (id, name, content_type_id, codename) VALUES (16, 'Can view user', 4, 'view_user');
+INSERT INTO public.auth_permission (id, name, content_type_id, codename) VALUES (17, 'Can add content type', 5, 'add_contenttype');
+INSERT INTO public.auth_permission (id, name, content_type_id, codename) VALUES (18, 'Can change content type', 5, 'change_contenttype');
+INSERT INTO public.auth_permission (id, name, content_type_id, codename) VALUES (19, 'Can delete content type', 5, 'delete_contenttype');
+INSERT INTO public.auth_permission (id, name, content_type_id, codename) VALUES (20, 'Can view content type', 5, 'view_contenttype');
+INSERT INTO public.auth_permission (id, name, content_type_id, codename) VALUES (21, 'Can add session', 6, 'add_session');
+INSERT INTO public.auth_permission (id, name, content_type_id, codename) VALUES (22, 'Can change session', 6, 'change_session');
+INSERT INTO public.auth_permission (id, name, content_type_id, codename) VALUES (23, 'Can delete session', 6, 'delete_session');
+INSERT INTO public.auth_permission (id, name, content_type_id, codename) VALUES (24, 'Can view session', 6, 'view_session');
+INSERT INTO public.auth_permission (id, name, content_type_id, codename) VALUES (25, 'Can add tehtava', 7, 'add_tehtava');
+INSERT INTO public.auth_permission (id, name, content_type_id, codename) VALUES (26, 'Can change tehtava', 7, 'change_tehtava');
+INSERT INTO public.auth_permission (id, name, content_type_id, codename) VALUES (27, 'Can delete tehtava', 7, 'delete_tehtava');
+INSERT INTO public.auth_permission (id, name, content_type_id, codename) VALUES (28, 'Can view tehtava', 7, 'view_tehtava');
+
+
+--
+-- TOC entry 2933 (class 0 OID 16444)
+-- Dependencies: 207
+-- Data for Name: auth_user; Type: TABLE DATA; Schema: public; Owner: kalorilaskuri_app
+--
+
+
+
+--
+-- TOC entry 2935 (class 0 OID 16454)
+-- Dependencies: 209
+-- Data for Name: auth_user_groups; Type: TABLE DATA; Schema: public; Owner: kalorilaskuri_app
+--
+
+
+
+--
+-- TOC entry 2937 (class 0 OID 16462)
+-- Dependencies: 211
+-- Data for Name: auth_user_user_permissions; Type: TABLE DATA; Schema: public; Owner: kalorilaskuri_app
+--
+
+
+
+--
+-- TOC entry 2939 (class 0 OID 16522)
+-- Dependencies: 213
+-- Data for Name: django_admin_log; Type: TABLE DATA; Schema: public; Owner: kalorilaskuri_app
+--
+
+
+
+--
+-- TOC entry 2925 (class 0 OID 16408)
+-- Dependencies: 199
+-- Data for Name: django_content_type; Type: TABLE DATA; Schema: public; Owner: kalorilaskuri_app
+--
+
+INSERT INTO public.django_content_type (id, app_label, model) VALUES (1, 'admin', 'logentry');
+INSERT INTO public.django_content_type (id, app_label, model) VALUES (2, 'auth', 'permission');
+INSERT INTO public.django_content_type (id, app_label, model) VALUES (3, 'auth', 'group');
+INSERT INTO public.django_content_type (id, app_label, model) VALUES (4, 'auth', 'user');
+INSERT INTO public.django_content_type (id, app_label, model) VALUES (5, 'contenttypes', 'contenttype');
+INSERT INTO public.django_content_type (id, app_label, model) VALUES (6, 'sessions', 'session');
+INSERT INTO public.django_content_type (id, app_label, model) VALUES (7, 'kalorilaskuri', 'tehtava');
+
+
+--
+-- TOC entry 2923 (class 0 OID 16397)
+-- Dependencies: 197
+-- Data for Name: django_migrations; Type: TABLE DATA; Schema: public; Owner: kalorilaskuri_app
+--
+
+INSERT INTO public.django_migrations (id, app, name, applied) VALUES (1, 'contenttypes', '0001_initial', '2021-11-17 14:21:07.69995+02');
+INSERT INTO public.django_migrations (id, app, name, applied) VALUES (2, 'auth', '0001_initial', '2021-11-17 14:21:07.797297+02');
+INSERT INTO public.django_migrations (id, app, name, applied) VALUES (3, 'admin', '0001_initial', '2021-11-17 14:21:07.819966+02');
+INSERT INTO public.django_migrations (id, app, name, applied) VALUES (4, 'admin', '0002_logentry_remove_auto_add', '2021-11-17 14:21:07.837305+02');
+INSERT INTO public.django_migrations (id, app, name, applied) VALUES (5, 'admin', '0003_logentry_add_action_flag_choices', '2021-11-17 14:21:07.852946+02');
+INSERT INTO public.django_migrations (id, app, name, applied) VALUES (6, 'contenttypes', '0002_remove_content_type_name', '2021-11-17 14:21:07.869977+02');
+INSERT INTO public.django_migrations (id, app, name, applied) VALUES (7, 'auth', '0002_alter_permission_name_max_length', '2021-11-17 14:21:07.87998+02');
+INSERT INTO public.django_migrations (id, app, name, applied) VALUES (8, 'auth', '0003_alter_user_email_max_length', '2021-11-17 14:21:07.888986+02');
+INSERT INTO public.django_migrations (id, app, name, applied) VALUES (9, 'auth', '0004_alter_user_username_opts', '2021-11-17 14:21:07.895942+02');
+INSERT INTO public.django_migrations (id, app, name, applied) VALUES (10, 'auth', '0005_alter_user_last_login_null', '2021-11-17 14:21:07.903007+02');
+INSERT INTO public.django_migrations (id, app, name, applied) VALUES (11, 'auth', '0006_require_contenttypes_0002', '2021-11-17 14:21:07.905245+02');
+INSERT INTO public.django_migrations (id, app, name, applied) VALUES (12, 'auth', '0007_alter_validators_add_error_messages', '2021-11-17 14:21:07.911147+02');
+INSERT INTO public.django_migrations (id, app, name, applied) VALUES (13, 'auth', '0008_alter_user_username_max_length', '2021-11-17 14:21:07.921989+02');
+INSERT INTO public.django_migrations (id, app, name, applied) VALUES (14, 'auth', '0009_alter_user_last_name_max_length', '2021-11-17 14:21:07.92999+02');
+INSERT INTO public.django_migrations (id, app, name, applied) VALUES (15, 'auth', '0010_alter_group_name_max_length', '2021-11-17 14:21:07.941131+02');
+INSERT INTO public.django_migrations (id, app, name, applied) VALUES (16, 'auth', '0011_update_proxy_permissions', '2021-11-17 14:21:07.949332+02');
+INSERT INTO public.django_migrations (id, app, name, applied) VALUES (17, 'auth', '0012_alter_user_first_name_max_length', '2021-11-17 14:21:07.957323+02');
+INSERT INTO public.django_migrations (id, app, name, applied) VALUES (18, 'kalorilaskuri', '0001_initial', '2021-11-17 14:21:07.965337+02');
+INSERT INTO public.django_migrations (id, app, name, applied) VALUES (19, 'kalorilaskuri', '0002_rename_otsikko_tehtava_ruoka', '2021-11-17 14:21:07.970196+02');
+INSERT INTO public.django_migrations (id, app, name, applied) VALUES (20, 'kalorilaskuri', '0003_tehtava_kalori_per_100g', '2021-11-17 14:21:07.97725+02');
+INSERT INTO public.django_migrations (id, app, name, applied) VALUES (21, 'sessions', '0001_initial', '2021-11-17 14:21:07.992283+02');
+
+
+--
+-- TOC entry 2942 (class 0 OID 16566)
+-- Dependencies: 216
+-- Data for Name: django_session; Type: TABLE DATA; Schema: public; Owner: kalorilaskuri_app
+--
+
+
+
+--
+-- TOC entry 2941 (class 0 OID 16555)
+-- Dependencies: 215
+-- Data for Name: kalorilaskuri_tehtava; Type: TABLE DATA; Schema: public; Owner: kalorilaskuri_app
+--
+
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (830, '3-Olut', 34);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (831, '4-Olut', 38);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (832, 'Ahvenfile', 86);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (833, 'Amerikansalaatti/jäävuorisalaatti', 10);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (834, 'Ananas tuore,kuorittu', 56);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (835, 'Ananasmehu, täys', 48);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (836, 'Appelsiini, kuorittu', 47);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (837, 'Appelsiinitäysmehu', 40);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (838, 'Avokado kuoreton, kivetön', 198);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (839, 'Balkanmakkara, Pirkka', 242);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (840, 'Banaani kuorittu', 88);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (841, 'Broilerin fileesuikale marinoitu', 180);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (842, 'Broilerin fileesuikale maustamaton', 110);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (843, 'Broilerin paistijauheliha', 128);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (844, 'Broilerin rintaleike nahkoineen', 149);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (845, 'Broilerinfileeleike, Pirkka', 100);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (846, 'Cashew-pähkinät', 560);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (847, 'CornFlakes maissihiutale', 380);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (848, 'Donitsit', 325);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (849, 'Etikka', 31);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (850, 'Greippi, kuorittu', 35);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (851, 'Grillimakkara, tavallinen', 220);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (852, 'Hampulilaiskastike', 340);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (853, 'Haukifile', 84);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (854, 'Herne pakaste', 123);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (855, 'Hernekeittopurkki, Pirkka', 115);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (856, 'Herne-maissi-paprikasekoitus', 69);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (857, 'Herne-maissi-porkkana (Pirkka)', 69);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (858, 'Hunaja', 335);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (859, 'I-Olut', 29);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (860, 'Jauheliha nauta, 17% rasvaa', 228);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (861, 'Jauheliha poron, Pirkka', 145);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (862, 'Jauheliha sika-nauta 22% rasv.', 262);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (863, 'Jauheliha, Pirkka kevyt 7% rasv.', 140);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (864, 'Jogurtti rusinat', 430);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (865, 'Jogurtti, asidofilus 2% rasv', 60);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (866, 'Jogurtti, Turkkilainen 10% rasv.', 119);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (867, 'Juusto Edam 24% rasvaa', 330);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (868, 'Juusto Emmental 29% rasv.', 370);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (869, 'Juusto kermainen 31% rasv.', 379);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (870, 'Juusto Kevyt 17% rasvaa', 298);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (871, 'Juusto Tuorejuusto kevyt', 180);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (872, 'Juusto, sinihome', 335);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (873, 'Juusto, Sulate kevyt', 195);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (874, 'Juustosnacks', 550);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (875, 'Kaali (valkokaali, keräkaali)', 28);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (876, 'Kahvi,juoma', 3);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (877, 'Kalapuikot, pakaste', 190);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (878, 'Kalkkunafilee', 105);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (879, 'Kalkkunanfileeleike, Pirkka', 100);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (880, 'Kampelafile', 94);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (881, 'Kananmuna, keitetty', 143);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (882, 'Kananmunan keltuainen', 285);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (883, 'Kananmunan valkuainen', 42);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (884, 'Karjalanpaistiliha, Pirkka', 156);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (885, 'Karpalo', 33);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (886, 'Karviainen', 29);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (887, 'Kasvisrasvasekoite 4% rasv.', 60);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (888, 'Katkaravut, pakaste', 67);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (889, 'Kaurahiutale', 350);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (890, 'Keittokinkku', 130);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (891, 'Kerma, kevyt 10% rasvaa', 120);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (892, 'Kerma, kuohu 35% rasvaa', 340);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (893, 'Kermaviili, 6% rasvaa', 80);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (894, 'Kesäkurpitsa, Zucchini', 18);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (895, 'Kiinankaali', 20);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (896, 'Kiivi', 47);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (897, 'Kinkkumakkara', 150);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (898, 'Kirjolohifilee', 166);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (899, 'Konjakki', 229);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (900, 'Kotikalja', 27);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (901, 'Kuha', 75);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (902, 'Kukkakaali', 25);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (903, 'Kurkku', 11);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (904, 'Kurpitsa', 17);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (905, 'Kääretorttu, kuningatar', 330);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (906, 'Lanttu', 29);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (907, 'Lauantaimakkara', 225);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (908, 'Lehtisalaatti', 12);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (909, 'Lehtisalaatti', 10);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (910, 'Lehtiselleri', 10);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (911, 'Leivontamargariini, 80% rasv.', 720);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (912, 'Lenkkimakkara', 220);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (913, 'Liköörit', 300);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (914, 'Limsa', 38);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (915, 'Linssit', 320);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (916, 'Lohi graavilohi', 180);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (917, 'Lohifilee', 195);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (918, 'Luumu kuivattu, Pirkka', 165);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (919, 'Luumu, kivetön,tuore', 47);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (920, 'Made', 70);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (921, 'Maissi pakaste, Pirkka', 123);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (922, 'Maito rasvaton', 33);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (923, 'Maito, kevyt', 46);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (924, 'Maitorahka', 62);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (925, 'Majoneesi, kevyt', 390);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (926, 'Majoneesi, rasvainen', 720);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (927, 'Makaroni, tavallinen', 350);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (928, 'Makrillifilee savustettu', 290);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (929, 'Maksamakkara, Pirkka', 243);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (930, 'Maksapasteija, kevyt, Pirkka', 132);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (931, 'Mandariini', 36);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (932, 'Mango kuutio,pirkka', 67);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (933, 'Mansikka', 46);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (934, 'Mansikkahillo', 200);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (935, 'Margariini 40%, Pirkka', 350);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (936, 'Margariini 60%, keskiarvo', 533);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (937, 'Margariini juokseva 80% rasv.', 720);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (938, 'Meetvursti, kotimainen', 400);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (939, 'Metvursti, ulkolainen', 468);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (940, 'Moniviljaleipä', 275);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (941, 'Muikku', 108);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (942, 'Mukulaselleri', 30);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (943, 'Mustaherukka', 41);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (944, 'Mustamakkara, Pirkka', 218);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (945, 'Mustikka', 37);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (946, 'Mysli', 340);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (947, 'Mysli, hedelmä', 330);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (948, 'Mäti, keskiarvo', 155);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (949, 'Nakki, a-luokka herkku', 226);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (950, 'Nakki, kevytnakki', 180);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (951, 'Nakki, tavallinen keskiarvo', 233);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (952, 'Naudan lihasuikale', 130);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (953, 'Naudanpaisti', 127);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (954, 'Nauris', 25);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (955, 'Näkkileipä, ruis', 339);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (956, 'Oliivit, vihreä paprikatäyte', 119);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (957, 'Oliiviöljy, extra virgin', 880);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (958, 'Omena', 35);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (959, 'Omenamehu, täys', 46);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (960, 'Paahtoleipä', 262);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (961, 'Palsternakka', 77);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (962, 'Paprika', 25);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (963, 'Paprika punainen ja keltainen', 30);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (964, 'Parsakaali (broccoli)', 30);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (965, 'Patonki', 250);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (966, 'Pavut, vihreät', 35);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (967, 'Pekoni', 280);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (968, 'Persikka', 39);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (969, 'Persilja, tuore', 27);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (970, 'Peruna', 75);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (971, 'Perunalastu, tavallinen', 540);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (972, 'Perunarieska', 218);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (973, 'Pirkka kevyt juomatiiviste', 6);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (974, 'Pirkka sekamehutiiviste', 260);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (975, 'Pitsakinkku suikale', 125);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (976, 'Popcornit', 440);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (977, 'Porkkana', 30);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (978, 'Poron paisti', 180);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (979, 'Porsaan ulkofile', 110);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (980, 'Pullapitko', 325);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (981, 'Punaherukka', 37);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (982, 'Punajuuri', 36);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (983, 'Punaviini', 70);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (984, 'Puolukka', 38);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (985, 'Päärynä', 42);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (986, 'Rankanperunat, pakaste', 127);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (987, 'Ranskanleipä', 230);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (988, 'Rapu', 66);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (989, 'Riisi, pitkä irtonainen', 370);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (990, 'Riisi, puuro', 340);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (991, 'Riisi, tumma irtonainen', 370);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (992, 'Riisimurot', 380);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (993, 'Rouhe sekaleipä', 270);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (994, 'Ruisjauho', 305);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (995, 'Ruisleipä, jälkiuuni', 280);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (996, 'Ruisleipä, ruispalat', 250);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (997, 'Ruisvuokaleipä', 205);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (998, 'Ruokaöljy, rypsi', 900);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (999, 'Ruusukaali', 20);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (1000, 'Salaattijuusto öljyssä, Pirkka', 270);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (1001, 'Salaattijuusto, kevyt Pirkka', 185);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (1002, 'Salaattijuusto, kevyt Pirkka', 185);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (1003, 'Salaattikastike', 450);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (1004, 'Salaattikastike, kevyt Pirkka', 90);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (1005, 'Sardiinit tomaattikastikkeessa', 165);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (1006, 'Saunapalvikinkku', 90);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (1007, 'Seiti pakaste', 80);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (1008, 'Setsuuri', 300);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (1009, 'Sianliha filee', 144);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (1010, 'Sianliha, raaka kinkkusuikale', 130);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (1011, 'Siideri', 48);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (1012, 'Siika', 100);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (1013, 'Silakkafileet', 144);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (1014, 'Silli maustesilli', 229);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (1015, 'Silli, kevytsuolattu, Pirkka', 250);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (1016, 'Simpukat suolaliemessä, Pirkka', 102);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (1017, 'Sinappi, tavallinen Pirkka', 250);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (1018, 'Sipuli', 30);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (1019, 'Sitruuna', 40);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (1020, 'Sokeri', 406);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (1021, 'Spagetti', 350);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (1022, 'Suklaa muffinit', 390);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (1023, 'Suklaamurot', 398);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (1024, 'Suolapähkinät', 600);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (1025, 'Suomuurain/ Hilla/Lakka', 54);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (1026, 'Sämpylä veteenleivottu', 250);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (1027, 'Sämpylä, hampurilais', 295);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (1028, 'Sämpyläjauho', 345);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (1029, 'Tee, juoma', 0.200000003);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (1030, 'Tilli, tuore', 30);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (1031, 'Tomaatti', 23);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (1032, 'Tomaattiketsuppi', 110);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (1033, 'Tomaattimurska', 30);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (1034, 'Tomaattipyree', 85);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (1035, 'Tonnikalapalat vedessä, Pirkka', 100);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (1036, 'Tonnikalapalat öljyssä, Pirkka', 180);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (1037, 'Vadelma', 40);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (1038, 'Valkoviini, kuiva', 68);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (1039, 'Valkoviini, makea', 98);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (1040, 'Vehnäjauho', 350);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (1041, 'Vesimelonin liha', 37);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (1042, 'Viina, kirkas', 230);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (1043, 'Viinirypäle', 69);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (1044, 'Viipalekurkkusäilyke', 44);
+INSERT INTO public.kalorilaskuri_tehtava (id, ruoka, kalori_per_100g) VALUES (1045, 'Voi, meijerivoi', 720);
+
+
+--
+-- TOC entry 2962 (class 0 OID 0)
+-- Dependencies: 202
+-- Name: auth_group_id_seq; Type: SEQUENCE SET; Schema: public; Owner: kalorilaskuri_app
+--
+
+SELECT pg_catalog.setval('public.auth_group_id_seq', 1, false);
+
+
+--
+-- TOC entry 2963 (class 0 OID 0)
+-- Dependencies: 204
+-- Name: auth_group_permissions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: kalorilaskuri_app
+--
+
+SELECT pg_catalog.setval('public.auth_group_permissions_id_seq', 1, false);
+
+
+--
+-- TOC entry 2964 (class 0 OID 0)
+-- Dependencies: 200
+-- Name: auth_permission_id_seq; Type: SEQUENCE SET; Schema: public; Owner: kalorilaskuri_app
+--
+
+SELECT pg_catalog.setval('public.auth_permission_id_seq', 28, true);
+
+
+--
+-- TOC entry 2965 (class 0 OID 0)
+-- Dependencies: 208
+-- Name: auth_user_groups_id_seq; Type: SEQUENCE SET; Schema: public; Owner: kalorilaskuri_app
+--
+
+SELECT pg_catalog.setval('public.auth_user_groups_id_seq', 1, false);
+
+
+--
+-- TOC entry 2966 (class 0 OID 0)
+-- Dependencies: 206
+-- Name: auth_user_id_seq; Type: SEQUENCE SET; Schema: public; Owner: kalorilaskuri_app
+--
+
+SELECT pg_catalog.setval('public.auth_user_id_seq', 1, false);
+
+
+--
+-- TOC entry 2967 (class 0 OID 0)
+-- Dependencies: 210
+-- Name: auth_user_user_permissions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: kalorilaskuri_app
+--
+
+SELECT pg_catalog.setval('public.auth_user_user_permissions_id_seq', 1, false);
+
+
+--
+-- TOC entry 2968 (class 0 OID 0)
+-- Dependencies: 212
+-- Name: django_admin_log_id_seq; Type: SEQUENCE SET; Schema: public; Owner: kalorilaskuri_app
+--
+
+SELECT pg_catalog.setval('public.django_admin_log_id_seq', 1, false);
+
+
+--
+-- TOC entry 2969 (class 0 OID 0)
+-- Dependencies: 198
+-- Name: django_content_type_id_seq; Type: SEQUENCE SET; Schema: public; Owner: kalorilaskuri_app
+--
+
+SELECT pg_catalog.setval('public.django_content_type_id_seq', 7, true);
+
+
+--
+-- TOC entry 2970 (class 0 OID 0)
+-- Dependencies: 196
+-- Name: django_migrations_id_seq; Type: SEQUENCE SET; Schema: public; Owner: kalorilaskuri_app
+--
+
+SELECT pg_catalog.setval('public.django_migrations_id_seq', 21, true);
+
+
+--
+-- TOC entry 2971 (class 0 OID 0)
+-- Dependencies: 214
+-- Name: kalorilaskuri_tehtava_id_seq; Type: SEQUENCE SET; Schema: public; Owner: kalorilaskuri_app
+--
+
+SELECT pg_catalog.setval('public.kalorilaskuri_tehtava_id_seq', 1045, true);
+
+
+-- Completed on 2021-11-17 16:04:46
+
+--
+-- PostgreSQL database dump complete
+--
+
