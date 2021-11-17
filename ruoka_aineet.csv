@@ -1,148 +1,39 @@
 ﻿Ruoka;kalori_per_100g
+3-Olut;34
+4-Olut;38
+Ahvenfile;86
 Amerikansalaatti/jäävuorisalaatti;10
-Herne pakaste;123
-Herne-maissi-paprikasekoitus;69
-Herne-maissi-porkkana (Pirkka);69
-Kaali (valkokaali, keräkaali);28
-Kesäkurpitsa, Zucchini;18
-Kiinankaali;20
-Kukkakaali;25
-Kurkku;11
-Kurpitsa;17
-Lanttu;29
-Lehtisalaatti;12
-Lehtisalaatti;10
-Lehtiselleri;10
-Linssit;320
-Maissi pakaste, Pirkka;123
-Mukulaselleri;30
-Nauris;25
-Palsternakka;77
-Paprika;25
-Paprika punainen ja keltainen;30
-Parsakaali (broccoli);30
-Pavut, vihreät;35
-Persilja, tuore;27
-Porkkana;30
-Punajuuri;36
-Ruusukaali;20
-Sipuli;30
-Tilli, tuore;30
-Tomaatti;23
-Peruna;75
 Ananas tuore,kuorittu;56
+Ananasmehu, täys;48
 Appelsiini, kuorittu;47
+Appelsiinitäysmehu;40
 Avokado kuoreton, kivetön;198
-Banaani kuorittu;88
-Greippi, kuorittu;35
-Karpalo;33
-Karviainen;29
-Kiivi;47
-Luumu kuivattu, Pirkka;165
-Luumu, kivetön,tuore;47
-Mandariini;36
-Mango kuutio,pirkka;67
-Mansikka;46
-Mustaherukka;41
-Mustikka;37
-Omena;35
-Persikka;39
-Punaherukka;37
-Puolukka;38
-Päärynä;42
-Sitruuna;40
-Suomuurain/ Hilla/Lakka;54
-Vadelma;40
-Vesimelonin liha;37
-Viinirypäle;69
 Balkanmakkara, Pirkka;242
+Banaani kuorittu;88
 Broilerin fileesuikale marinoitu;180
 Broilerin fileesuikale maustamaton;110
 Broilerin paistijauheliha;128
 Broilerin rintaleike nahkoineen;149
 Broilerinfileeleike, Pirkka;100
+Cashew-pähkinät;560
+CornFlakes maissihiutale;380
+Donitsit;325
+Etikka;31
+Greippi, kuorittu;35
 Grillimakkara, tavallinen;220
+Hampulilaiskastike;340
+Haukifile;84
+Herne pakaste;123
+Hernekeittopurkki, Pirkka;115
+Herne-maissi-paprikasekoitus;69
+Herne-maissi-porkkana (Pirkka);69
+Hunaja;335
+I-Olut;29
 Jauheliha nauta, 17% rasvaa;228
 Jauheliha poron, Pirkka;145
 Jauheliha sika-nauta 22% rasv.;262
 Jauheliha, Pirkka kevyt 7% rasv.;140
-Kalkkunafilee;105
-Kalkkunanfileeleike, Pirkka;100
-Karjalanpaistiliha, Pirkka;156
-Keittokinkku;130
-Kinkkumakkara;150
-Lauantaimakkara;225
-Lenkkimakkara;220
-Maksamakkara, Pirkka;243
-Maksapasteija, kevyt, Pirkka;132
-Meetvursti, kotimainen;400
-Metvursti, ulkolainen;468
-Mustamakkara, Pirkka;218
-Nakki, a-luokka herkku;226
-Nakki, kevytnakki;180
-Nakki, tavallinen keskiarvo;233
-Naudan lihasuikale;130
-Naudanpaisti;127
-Pekoni;280
-Pitsakinkku suikale;125
-Poron paisti;180
-Porsaan ulkofile;110
-Saunapalvikinkku;90
-Sianliha filee;144
-Sianliha, raaka kinkkusuikale;130
-Ahvenfile;86
-Haukifile;84
-Kampelafile;94
-Kirjolohifilee;166
-Kuha;75
-Lohifilee;195
-Lohi graavilohi;180
-Made;70
-Muikku;108
-Seiti pakaste;80
-Siika;100
-Silakkafileet;144
-Silli, kevytsuolattu, Pirkka;250
-Silli maustesilli;229
-Makrillifilee savustettu;290
-Katkaravut, pakaste;67
-Mäti, keskiarvo;155
-Rapu;66
-Sardiinit tomaattikastikkeessa;165
-Simpukat suolaliemessä, Pirkka;102
-Tonnikalapalat vedessä, Pirkka;100
-Tonnikalapalat öljyssä, Pirkka;180
-CornFlakes maissihiutale;380
-Donitsit;325
-Kaurahiutale;350
-Kääretorttu, kuningatar;330
-Makaroni, tavallinen;350
-Moniviljaleipä;275
-Mysli;340
-Mysli, hedelmä;330
-Näkkileipä, ruis;339
-Paahtoleipä;262
-Patonki;250
-Perunarieska;218
-Pullapitko;325
-Ranskanleipä;230
-Riisi, pitkä irtonainen;370
-Riisi, puuro;340
-Riisi, tumma irtonainen;370
-Riisimurot;380
-Rouhe sekaleipä;270
-Ruisjauho;305
-Ruisleipä, jälkiuuni;280
-Ruisleipä, ruispalat;250
-Ruisvuokaleipä;205
-Setsuuri;300
-Spagetti;350
-Suklaa muffinit;390
-Suklaamurot;398
-Sämpylä veteenleivottu;250
-Sämpylä, hampurilais;295
-Sämpyläjauho;345
-Vehnäjauho;350
+Jogurtti rusinat;430
 Jogurtti, asidofilus 2% rasv;60
 Jogurtti, Turkkilainen 10% rasv.;119
 Juusto Edam 24% rasvaa;330
@@ -152,66 +43,175 @@ Juusto Kevyt 17% rasvaa;298
 Juusto Tuorejuusto kevyt;180
 Juusto, sinihome;335
 Juusto, Sulate kevyt;195
+Juustosnacks;550
+Kaali (valkokaali, keräkaali);28
+Kahvi,juoma;3
+Kalapuikot, pakaste;190
+Kalkkunafilee;105
+Kalkkunanfileeleike, Pirkka;100
+Kampelafile;94
+Kananmuna, keitetty;143
+Kananmunan keltuainen;285
+Kananmunan valkuainen;42
+Karjalanpaistiliha, Pirkka;156
+Karpalo;33
+Karviainen;29
 Kasvisrasvasekoite 4% rasv.;60
+Katkaravut, pakaste;67
+Kaurahiutale;350
+Keittokinkku;130
 Kerma, kevyt 10% rasvaa;120
 Kerma, kuohu 35% rasvaa;340
 Kermaviili, 6% rasvaa;80
+Kesäkurpitsa, Zucchini;18
+Kiinankaali;20
+Kiivi;47
+Kinkkumakkara;150
+Kirjolohifilee;166
+Konjakki;229
+Kotikalja;27
+Kuha;75
+Kukkakaali;25
+Kurkku;11
+Kurpitsa;17
+Kääretorttu, kuningatar;330
+Lanttu;29
+Lauantaimakkara;225
+Lehtisalaatti;12
+Lehtisalaatti;10
+Lehtiselleri;10
 Leivontamargariini, 80% rasv.;720
+Lenkkimakkara;220
+Liköörit;300
+Limsa;38
+Linssit;320
+Lohi graavilohi;180
+Lohifilee;195
+Luumu kuivattu, Pirkka;165
+Luumu, kivetön,tuore;47
+Made;70
+Maissi pakaste, Pirkka;123
 Maito rasvaton;33
 Maito, kevyt;46
 Maitorahka;62
+Majoneesi, kevyt;390
+Majoneesi, rasvainen;720
+Makaroni, tavallinen;350
+Makrillifilee savustettu;290
+Maksamakkara, Pirkka;243
+Maksapasteija, kevyt, Pirkka;132
+Mandariini;36
+Mango kuutio,pirkka;67
+Mansikka;46
+Mansikkahillo;200
 Margariini 40%, Pirkka;350
 Margariini 60%, keskiarvo;533
 Margariini juokseva 80% rasv.;720
+Meetvursti, kotimainen;400
+Metvursti, ulkolainen;468
+Moniviljaleipä;275
+Muikku;108
+Mukulaselleri;30
+Mustaherukka;41
+Mustamakkara, Pirkka;218
+Mustikka;37
+Mysli;340
+Mysli, hedelmä;330
+Mäti, keskiarvo;155
+Nakki, a-luokka herkku;226
+Nakki, kevytnakki;180
+Nakki, tavallinen keskiarvo;233
+Naudan lihasuikale;130
+Naudanpaisti;127
+Nauris;25
+Näkkileipä, ruis;339
+Oliivit, vihreä paprikatäyte;119
+Oliiviöljy, extra virgin;880
+Omena;35
+Omenamehu, täys;46
+Paahtoleipä;262
+Palsternakka;77
+Paprika;25
+Paprika punainen ja keltainen;30
+Parsakaali (broccoli);30
+Patonki;250
+Pavut, vihreät;35
+Pekoni;280
+Persikka;39
+Persilja, tuore;27
+Peruna;75
+Perunalastu, tavallinen;540
+Perunarieska;218
+Pirkka kevyt juomatiiviste;6
+Pirkka sekamehutiiviste;260
+Pitsakinkku suikale;125
+Popcornit;440
+Porkkana;30
+Poron paisti;180
+Porsaan ulkofile;110
+Pullapitko;325
+Punaherukka;37
+Punajuuri;36
+Punaviini;70
+Puolukka;38
+Päärynä;42
+Rankanperunat, pakaste;127
+Ranskanleipä;230
+Rapu;66
+Riisi, pitkä irtonainen;370
+Riisi, puuro;340
+Riisi, tumma irtonainen;370
+Riisimurot;380
+Rouhe sekaleipä;270
+Ruisjauho;305
+Ruisleipä, jälkiuuni;280
+Ruisleipä, ruispalat;250
+Ruisvuokaleipä;205
+Ruokaöljy, rypsi;900
+Ruusukaali;20
 Salaattijuusto öljyssä, Pirkka;270
 Salaattijuusto, kevyt Pirkka;185
 Salaattijuusto, kevyt Pirkka;185
-Voi, meijerivoi;720
-3-Olut;34
-4-Olut;38
-Ananasmehu, täys;48
-Appelsiinitäysmehu;40
-I-Olut;29
-Kahvi,juoma;3
-Konjakki;229
-Kotikalja;27
-Liköörit;300
-Limsa;38
-Omenamehu, täys;46
-Pirkka kevyt juomatiiviste;6
-Pirkka sekamehutiiviste;260
-Punaviini;70
+Salaattikastike;300-500
+Salaattikastike, kevyt Pirkka;90
+Sardiinit tomaattikastikkeessa;165
+Saunapalvikinkku;90
+Seiti pakaste;80
+Setsuuri;300
+Sianliha filee;144
+Sianliha, raaka kinkkusuikale;130
 Siideri;48
+Siika;100
+Silakkafileet;144
+Silli maustesilli;229
+Silli, kevytsuolattu, Pirkka;250
+Simpukat suolaliemessä, Pirkka;102
+Sinappi, tavallinen Pirkka;250
+Sipuli;30
+Sitruuna;40
+Sokeri;406
+Spagetti;350
+Suklaa muffinit;390
+Suklaamurot;398
+Suolapähkinät;600
+Suomuurain/ Hilla/Lakka;54
+Sämpylä veteenleivottu;250
+Sämpylä, hampurilais;295
+Sämpyläjauho;345
 Tee, juoma;0,2
+Tilli, tuore;30
+Tomaatti;23
+Tomaattiketsuppi;110
+Tomaattimurska;30
+Tomaattipyree;85
+Tonnikalapalat vedessä, Pirkka;100
+Tonnikalapalat öljyssä, Pirkka;180
+Vadelma;40
 Valkoviini, kuiva;68
 Valkoviini, makea;98
+Vehnäjauho;350
+Vesimelonin liha;37
 Viina, kirkas;230
-Tomaattimurska;30
-Etikka;31
-Kananmunan valkuainen;42
+Viinirypäle;69
 Viipalekurkkusäilyke;44
-Tomaattipyree;85
-Salaattikastike, kevyt Pirkka;90
-Tomaattiketsuppi;110
-Hernekeittopurkki, Pirkka;115
-Oliivit, vihreä paprikatäyte;119
-Rankanperunat, pakaste;127
-Kananmuna, keitetty;143
-Kalapuikot, pakaste;190
-Mansikkahillo;200
-Sinappi, tavallinen Pirkka;250
-Kananmunan keltuainen;285
-Hunaja;335
-Hampulilaiskastike;340
-Majoneesi, kevyt;390
-Sokeri;406
-Jogurtti rusinat;430
-Popcornit;440
-Perunalastu, tavallinen;540
-Juustosnacks;550
-Cashew-pähkinät;560
-Suolapähkinät;600
-Majoneesi, rasvainen;720
-Oliiviöljy, extra virgin;880
-Ruokaöljy, rypsi;900
-Salaattikastike;300-500
+Voi, meijerivoi;720
