@@ -78,7 +78,7 @@ DATABASES = {
      'default': {
          'ENGINE': 'django.db.backends.postgresql',
          'HOST': 'localhost',
-         'USER': 'postgres',
+         'USER': 'kalorilaskuri_app',
          'PASSWORD': 'Q2werty',
          'NAME': 'ruoka_aineet',
          'PORT': '5432'
