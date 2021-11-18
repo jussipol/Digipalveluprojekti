@@ -23,6 +23,9 @@ function myFunction() {
 
 
 	let kaloritavoite = document.querySelector('#kaloritavoite').value;
+	if (!kaloritavoite) {
+		kaloritavoite = 0;
+	}
 
 
 	kalorit_yhteensa = document.querySelector('#kalorit');
@@ -35,6 +38,10 @@ function resetFunction() {
 
 	for (let elem of lista_elems) {
 		elem.remove();
+	}
+
+	if (!kaloritavoite) {
+		kaloritavoite = 0;
 	}
 
 	count = 0;
@@ -54,6 +61,9 @@ function deleteFunction() {
 		
 	}
 	kaloritavoite = document.querySelector('#kaloritavoite').value;
+	if (!kaloritavoite) {
+		kaloritavoite = 0;
+	}
 	kalorit_yhteensa = document.querySelector('#kalorit');
 	kalorit_yhteensa.textContent = count + ' / ' + kaloritavoite;
 }
