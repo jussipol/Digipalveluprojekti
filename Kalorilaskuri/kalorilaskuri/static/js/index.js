@@ -13,6 +13,7 @@ function myFunction() {
     checkboxElem.type = 'checkbox'
     optionElem.classList.add('lista_elem');
 
+	optionElem.setAttribute('data-kalorit', selected.value);
     optionElem.textContent = ruoka_listaan + ' ' + selected.value;
 
     let selectContainer = document.querySelector('#select-container');
@@ -22,6 +23,9 @@ function myFunction() {
 
 
 	let kaloritavoite = document.querySelector('#kaloritavoite').value;
+	if (!kaloritavoite) {
+		kaloritavoite = 0;
+	}
 
 
 	kalorit_yhteensa = document.querySelector('#kalorit');
@@ -36,6 +40,10 @@ function resetFunction() {
 		elem.remove();
 	}
 
+	if (!kaloritavoite) {
+		kaloritavoite = 0;
+	}
+
 	count = 0;
 	kalorit_yhteensa.textContent = count + ' / ' + kaloritavoite;
 }
@@ -47,11 +55,15 @@ function deleteFunction() {
 	for (let elem of lista_elems) {
 		let listaelem = elem.querySelector('input');
 		if (listaelem.checked){
+			count -= +elem.dataset.kalorit;
 			elem.remove();
 		}
 		
 	}
-
-	
-
+	kaloritavoite = document.querySelector('#kaloritavoite').value;
+	if (!kaloritavoite) {
+		kaloritavoite = 0;
+	}
+	kalorit_yhteensa = document.querySelector('#kalorit');
+	kalorit_yhteensa.textContent = count + ' / ' + kaloritavoite;
 }
