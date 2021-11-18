@@ -6,15 +6,15 @@ function myFunction() {
 	let selected = document.querySelector('#ruoka_id');
 	let ruoka_listaan = selected.options[selected.selectedIndex].textContent
 
-	count += +selected.value;
+	count += Math.ceil(+selected.value);
 
 	let optionElem = document.createElement('LI');
 	let checkboxElem = document.createElement('INPUT')
     checkboxElem.type = 'checkbox'
     optionElem.classList.add('lista_elem');
 
-	optionElem.setAttribute('data-kalorit', selected.value);
-    optionElem.textContent = ruoka_listaan + ' ' + selected.value;
+	optionElem.setAttribute('data-kalorit', Math.ceil(+selected.value));
+    optionElem.textContent = ruoka_listaan + ' ' + Math.ceil(+selected.value) + ' kaloria';
 
     let selectContainer = document.querySelector('#select-container');
 	
