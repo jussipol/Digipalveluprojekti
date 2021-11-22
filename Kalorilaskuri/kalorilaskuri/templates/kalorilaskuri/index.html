@@ -18,17 +18,17 @@
 <header><img src="{%static 'pics/logo_head.png'%}" alt="logo" class="header-img"></header>
 <div class="main-div">
 
-    <p>Aseta päivän kaloritavoite: <input id="kaloritavoite" type="number"> </p>
-    <select id="ruoka_id">
+    <p>Aseta päivän kaloritavoite: <input id="kaloritavoite" type="number" value="2500"></p>
+    <select id="ruoka_id"> 
         <option></option>
     {% for ruoka in ruoat %}
         <option value={{ ruoka.kalori_per_100g }}> {{ruoka}} </option>
     {% endfor %}
-    </select>
+    </select> <p>Määrä grammoina: <input id="ruokamaara" type="number" value="100"></p>
 
     <button onclick="myFunction()">Lisää 🍴🍕</button></p>
     <ul id="select-container"></ul>
-    <button onclick="deleteFunction()">Poista valittu </button>
+    <button onclick="deleteFunction()">Poista valitut </button>
     <button onclick="resetFunction()">Poista kaikki</button>
     
     <p>Kalorit yhteensä: <span id="kalorit">0 / 0</span></p>
@@ -49,7 +49,10 @@
 
 </body>
 <br>
-<footer>kalorilaskuri</footer>
+<footer>
+<p>Päivittäinen energiantarve riippuu muun muassa sukupuolesta, iästä, painosta ja lihasmassasta.<br>
+Myös fyysinen aktiivisuus vaikuttaa energiantarpeeseen.
+Aikuisen ihmisen tyypillinen energiantarve on noin 2000-3000 kilokaloria vuorokaudessa. </p></footer>
 
 
 </html>

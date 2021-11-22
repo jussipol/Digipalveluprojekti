@@ -98,11 +98,13 @@ option {
 
 footer {
     bottom: 0px;
-    background-color: grey;
+    background-color: rgba(161, 161, 161, 0.2);
     height: 70px;
     width: 100%;
     position: fixed;
     left: 0;
+    font-size: 12px;
+    text-align: center;
     
 }
 
