@@ -1,20 +1,23 @@
 
 let count = 0;
 let kalorit_yhteensa;
+let ruoan_maara;
 
 function myFunction() {
 	let selected = document.querySelector('#ruoka_id');
 	let ruoka_listaan = selected.options[selected.selectedIndex].textContent
+	ruoan_maara = document.querySelector('#ruokamaara');
 
-	count += Math.ceil(+selected.value);
+	let kalorimaara = Math.ceil(+selected.value / 100 * +ruoan_maara.value)
+	count += Math.ceil(+selected.value / 100 * +ruoan_maara.value);
 
 	let optionElem = document.createElement('LI');
 	let checkboxElem = document.createElement('INPUT')
     checkboxElem.type = 'checkbox'
     optionElem.classList.add('lista_elem');
 
-	optionElem.setAttribute('data-kalorit', Math.ceil(+selected.value));
-    optionElem.textContent = ruoka_listaan + ' ' + Math.ceil(+selected.value) + ' kaloria';
+	optionElem.setAttribute('data-kalorit', Math.ceil(kalorimaara));
+    optionElem.textContent = ruoka_listaan + ' ' + kalorimaara + ' kaloria';
 
     let selectContainer = document.querySelector('#select-container');
 	
