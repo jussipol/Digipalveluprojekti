@@ -5,6 +5,9 @@ let ruoan_maara;
 
 function myFunction() {
 	let selected = document.querySelector('#ruoka_id');
+	if (!selected.value) {
+		return;
+	}
 	let ruoka_listaan = selected.options[selected.selectedIndex].textContent
 	ruoan_maara = document.querySelector('#ruokamaara');
 
