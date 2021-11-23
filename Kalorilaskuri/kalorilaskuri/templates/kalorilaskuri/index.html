@@ -39,9 +39,11 @@
 <script>
     $(document).ready(function () {
             $('#ruoka_id').select2({
-                width: '40%',
+                width: '60%',
                 placeholder: 'Valitse lisättävät ruoka-aineet',
-                dropdownAutoWidth: true
+                dropdownAutoWidth: true,
+                dropdownCssClass: 'dropdown',
+                dropdownParent: $('.main-div')
             });
         });
 </script>

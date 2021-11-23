@@ -75,6 +75,7 @@ button:hover {
 }
 
 #ruoka_id {
+    word-wrap: break-word;
     width: 75%;
     font-size: 15px;
     background-color:rgb(108,163,87);
@@ -83,6 +84,11 @@ button:hover {
     border-radius: 8px;
     height: 40px;
     text-shadow: 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.select2-container {
+    max-width: 50% !important;
+    word-wrap: break-word;
 }
 
 input {
