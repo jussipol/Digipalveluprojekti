@@ -91,6 +91,10 @@ button:hover {
     word-wrap: break-word;
 }
 
+#ruokamaara {
+    width: 5em;
+}
+
 input {
     font-size: 15px;
 }
