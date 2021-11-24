@@ -118,7 +118,11 @@ footer {
     left: 0;
     font-size: 12px;
     text-align: center;
-    
+}
+
+.footerP {
+    margin-left: 70px;
+    margin-right: 70px;
 }
 
 
