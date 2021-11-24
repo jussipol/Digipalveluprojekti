@@ -8,3 +8,11 @@ class tehtava(models.Model):
 
     def __str__(self):
         return self.ruoka
+
+
+class Tekstit(models.Model):
+    nimi = models.CharField(max_length=50)
+    teksti = models.CharField(max_length=1000)
+
+    def __str__(self):
+        return self.nimi

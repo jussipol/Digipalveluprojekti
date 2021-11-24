@@ -35,7 +35,7 @@ function myFunction() {
 
 
 	kalorit_yhteensa = document.querySelector('#kalorit');
-	kalorit_yhteensa.textContent = count + ' / ' + kaloritavoite;
+	kalorit_yhteensa.textContent = count + ' / ' ;
 }
 
 function resetFunction() {
@@ -51,7 +51,7 @@ function resetFunction() {
 	}
 
 	count = 0;
-	kalorit_yhteensa.textContent = count + ' / ' + kaloritavoite;
+	kalorit_yhteensa.textContent = count + ' / ';
 }
 
 function deleteFunction() {
@@ -71,5 +71,18 @@ function deleteFunction() {
 		kaloritavoite = 0;
 	}
 	kalorit_yhteensa = document.querySelector('#kalorit');
-	kalorit_yhteensa.textContent = count + ' / ' + kaloritavoite;
+	kalorit_yhteensa.textContent = count + ' / ';
 }
+
+function updateTavoite() {
+	let muuttuja = document.querySelector('#kalorispan');
+	let kaloritavoite = document.querySelector('#kaloritavoite').value;
+
+	if (!kaloritavoite || kaloritavoite < 0) {
+		kaloritavoite = 0;
+		
+	}
+
+	muuttuja.textContent = kaloritavoite;
+}
+document.querySelector('#kaloritavoite').addEventListener('input', updateTavoite);
