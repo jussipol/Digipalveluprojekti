@@ -46,7 +46,10 @@ body {
 @media only screen and (max-width: 760px) {
     .header-img {
         width: 70vw;
-        display: none;
+    }
+
+    header {
+        background-image: none;
     }
 }
 
@@ -130,10 +133,16 @@ footer {
     footer {
         height: auto;
         position: static;
-        
-        
+    }
 
+    body {
+        padding: 10px 15px;
+        font-size: 17px;
+    }
 
+    .main-div {
+        padding: 40px 10px;
+        margin: 10px 0px;
     }
 
 }
